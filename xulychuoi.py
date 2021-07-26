@@ -8,14 +8,15 @@ def tach_chuoi(chuoi):
     return chuoi_moi
 
 def doi_sanh_rong_co_dk(chuoi):
-    chuoi_moi = list(chuoi.split(" "))
+    # chuoi_moi = list(chuoi.split(" "))
     i = 0
     for tu in chuoi.split():
-        chuoi_moi[i] = "+"+chuoi_moi[i]
+        chuoi[i] = "+"+chuoi[i]
         i += 1
-    str1 = ' '.join(chuoi_moi)
-    # print(str1)
-    return str1
+    return chuoi
+    # str1 = ' '.join(chuoi_moi)
+    # # print(str1)
+    # return str1
 
 
 def chuyen_str(chuoi):
@@ -43,7 +44,7 @@ def chuyen_str(chuoi):
 if __name__ == "__main__":
     #split_line("phạm thanh phú")
     phu = "phạm thanh phú"
-    # tach_chuoi(phu)
-    kq = doi_sanh_rong_co_dk(phu)
-    # chuyen_str(phu)
-    print(kq)
+    kq0 =  tach_chuoi(phu)
+    # kq = doi_sanh_rong_co_dk(tach_chuoi(phu))
+    # kq1 = chuyen_str(kq)
+    print(kq0)
